@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO 🖥️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="start" class="screen">
+    <div class="mascot-wrap">
+      <div class="mascot">👾</div>
+      <div class="mascot-shadow"></div>
+    </div>
+    <h1>WELCOME TO MY WORLD!</h1>
+    <p>A little corner of the internet where I keep my projects and progress.</p>
+    <button onclick="showScreen('game')">START ▶</button>
+  </div>
+
+  <div id="game" class="screen">
+    <h1>MY WORLD</h1>
+    <h2>choose a map to explore!</h2>
+    <div class="menu">
+      <button onclick="showScreen('about')">ABOUT ME 🎀</button>
+      <button onclick="showScreen('projects')">MY PROJECTS 🗂️</button>
+      <button onclick="showScreen('skills')">SKILLS 💻</button>
+    </div>
+  </div>
+
+  <div id="about" class="screen">
+    <h1>About Me 🎀</h1>
+    <p>
+      Hi! I'm Prakthuksha, a first-year Computer Science student specializing in
+      Artificial Intelligence and Machine Learning (AI &amp; ML).
+    </p>
+    <p>
+      I'm interested in programming, problem-solving, and exploring how technology
+      can be used to build practical and creative solutions. I have a good foundation
+      in Python and have worked on small projects to apply my programming concepts
+      in real-world scenarios.
+    </p>
+    <p>
+      I'm currently learning C programming to strengthen my understanding of
+      programming fundamentals and logical thinking. I also have beginner-level
+      knowledge of HTML and JavaScript and am exploring AutoCAD alongside my
+      academic learning.
+    </p>
+    <p>
+      I believe in learning through practice, building projects, and continuously
+      improving my skills. This GitHub profile is a collection of my projects,
+      experiments, and progress as I continue developing my technical skills.
+    </p>
+    <button onclick="showScreen('game')">◀ BACK</button>
+  </div>
+
+  <div id="skills" class="screen">
+    <h1>My Skills 💻</h1>
+    <ul>
+      <li><strong>Python</strong> — comfortable with fundamental concepts and beginner-level projects</li>
+      <li><strong>File Handling</strong> — reading, writing, and managing files in Python</li>
+      <li><strong>MySQL</strong> — writing queries and managing databases</li>
+      <li><strong>C Programming</strong> — currently learning and strengthening fundamentals</li>
+      <li><strong>HTML</strong> — basic knowledge of webpage structure</li>
+      <li><strong>JavaScript</strong> — beginner-level, exploring interactive web development</li>
+      <li><strong>AutoCAD</strong> — currently learning the basics</li>
+      <li><strong>Problem Solving</strong> — building logical thinking through hands-on practice</li>
+    </ul>
+    <button onclick="showScreen('game')">◀ BACK</button>
+  </div>
+
+  <div id="projects" class="screen">
+    <h1>My Projects 🗂️</h1>
+    <p>
+      A mix of academic and personal projects, applying programming concepts to
+      practical problems and learning through hands-on development.
+    </p>
+
+    <h3>🩸 Blood Donation Management System</h3>
+    <p>An academic project using Python and MySQL to manage donor and blood request
+    information — adding, viewing, and searching records.</p>
+    <p>This is just the beginning — more projects on the way!</p>
+    <button onclick="showScreen('game')">◀ BACK</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
